@@ -1,58 +1,79 @@
 <!DOCTYPE html>
 <html>
-<title>Project manageemnt tool</title>
+<title>Prosjektstyringsverktøy</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<style>
-body {font-family: "Times New Roman", Georgia, Serif;}
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Playfair Display";
-  letter-spacing: 5px;
-}
-</style>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="styles.css">
 <body>
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px;">
-    <a href="#home" class="w3-bar-item w3-button">Project management tool</a>
+  <div class="w3-bar w3-white w3-padding w3-card" style="letter-spacing:4px">
+    <a href="#home" class="w3-bar-item w3-button">Prosjektstyringsverktøy</a>
     <!-- Right-sided navbar links. Hide them on small screens -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button">About</a>
-      <a href="#menu" class="w3-bar-item w3-button">Menu</a>
-      <a href="#contact" class="w3-bar-item w3-button">Contact</a>
+      <a href="#about" class="w3-bar-item w3-button">Om oss</a>
+      <a href="#project-types" class="w3-bar-item w3-button">Typer prosjekt</a>
+      <a href="#classify-project" class="w3-bar-item w3-button">Gjenkjenn prosjekt</a>
     </div>
   </div>
 </div>
 
-<!-- Header -->
-<header class="w3-display-container w3-content w3-wide" style="max-width:1600px;min-width:500px" id="home">
-  <img class="w3-image" src="/w3images/hamburger.jpg" alt="Hamburger Catering" width="1600" height="800">
-  <div class="w3-display-bottomleft w3-padding-large w3-opacity">
-    <h1 class="w3-xxlarge">Le Catering</h1>
-  </div>
-</header>
-
 <!-- Page content -->
-<div>
-  <div style="display:flex;padding-top:100px;justify-content:center">
-    <button type="button" class="btn btn-default">Typer prosjekt</button>
-    <button type="button" class="btn btn-default">Gjenkjenn prosjekt</button>
+<div class="w3-content" style="max-width:1100px">
+
+  <!-- About Section -->
+  <div class="w3-row w3-padding-64" id="about">
+    <div class="w3-col l12 w3-padding-large">
+      <h1 class="w3-center">Om oss 💡</h1><br>
+      <p class="w3-large"></p>
+    </div>
   </div>
-  <div>
 
+  <hr>
+
+  <!-- Project Types Section -->
+  <div class="w3-row w3-padding-64" id="project-types">
+    <div class="w3-col l12 w3-padding-large">
+      <h1 class="w3-center">Typer prosjekt 📋</h1><br>
+    </div>
+
+    <div class="w3-col l6 w3-padding-large">
+      <h4>▪️Digitaliseringsprosjekt</h4>
+      <h4>▪️IKT- og programvareprosjekter</h4>
+      <h4>▪️Omstillingsprosjekt (endring)</h4>
+      <h4>▪️Produktutvikling</h4>
+      <h4>▪️Byggeprosjekter</h4>
+      <h4>▪️Forskning- og utredningsprosjekter</h4>
+    </div>
+
+    <div class="w3-col l6 w3-padding-large">
+      <p class="w3-text-grey">Digitaliseringsprosjekt</p><br>
+      <p class="w3-text-grey">IKT- og programvareprosjekter</p><br>
+      <p class="w3-text-grey">Omstillingsprosjekt (endring)</p><br>
+      <p class="w3-text-grey">Produktutvikling</p><br>
+      <p class="w3-text-grey">Byggeprosjekter</p><br>
+      <p class="w3-text-grey">Forskning- og utredningsprosjekter</p><br>
+    </div>
   </div>
 
+  <hr>
 
+  <!-- Contact Section -->
+  <div class="w3-row w3-padding-64" id="classify-project">
+    <div class="w3-col l12 w3-padding-large">
+      <h1 class="w3-center">Gjenkjenn prosjekt 💍</h1><br>
+    </div>
+
+    <div class="w3-col l6 w3-padding-large">
+    </div>
+
+    <div class="w3-col l6 w3-padding-large">
+    </div>
+  </div>
+
+  <!-- End page content -->
 </div>
 <!-- End page content -->
 
