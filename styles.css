@@ -17,6 +17,17 @@ h1, h2, h3, h4, h5, h6 {
     text-decoration: none;
 }
 
+.section-image {
+    width: 100%;
+    object-fit: cover;
+    height: 300px;
+}
+
+.section-image-source {
+    display: flex;
+    justify-content: flex-end;
+}
+
 table th, table td {
     vertical-align: text-top;
 }
