@@ -1,11 +1,29 @@
 body {
     font-family: "Times New Roman", Georgia, Serif, serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 h1, h2, h3, h4, h5, h6 {
     font-family: "Playfair Display", serif;
     letter-spacing: 5px;
+}
+
+h1 {
+    font-size: 46px;
+}
+
+h2 {
+   font-size: 40px;
+}
+
+h3 {
+    text-decoration: underline;
+    padding-top: 55px;
+    font-size: 34px;
+}
+
+h4 {
+    font-size: 25px;
 }
 
 #about, #project-types, #classify-project {
@@ -39,6 +57,8 @@ table th, table td {
 }
 
 .characteristics-table, .characteristics-image {
+    margin-bottom: 24px;
+    border-collapse: collapse;
     width: 500px;
 }
 
@@ -49,6 +69,14 @@ table th, table td {
 
 .characteristics-table td:first-child, .risks-table th {
     text-align: left;
+}
+
+.characteristics-table tr th, .characteristics-table tr:not(:last-child) td {
+    border-bottom: 1px solid #ddd;
+}
+
+.characteristics-table th:not(:last-child), .characteristics-table td:not(:last-child) {
+    border-right: 1px solid #ddd;
 }
 
 .stakeholders-table td:first-child  {
