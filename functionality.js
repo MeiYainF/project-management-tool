@@ -74,6 +74,8 @@ var scores = [{
     }
 }];
 
+var previousResult = '';
+
 function updateCharacteristic(value, characteristic) {
     this.characteristics[characteristic] = value;
     document.getElementById(characteristic).innerText = this.characteristics[characteristic];
@@ -91,20 +93,28 @@ function updateCharacteristic(value, characteristic) {
     });
     results = results.sort(function(a, b) {return a.score - b.score});
 
-    document.getElementsByClassName('best-match-container').item(0).style.opacity = 0;
-    setTimeout(function() {
-        document.getElementById('best-match').children[0].innerHTML = results[0].name;
-        document.getElementById('best-match').href = results[0].href;
-        document.getElementById('score').innerText = 'Score: ' + results[0].score;
-        document.getElementById('comparison-uncertainty').innerText = results[0].characteristics.uncertainty;
-        document.getElementById('comparison-change').innerText = results[0].characteristics.change;
-        document.getElementById('comparison-limitations').innerText = results[0].characteristics.limitations;
-        document.getElementById('comparison-complexity').innerText = results[0].characteristics.complexity;
-        document.getElementById('comparison-impact').innerText = results[0].characteristics.impact;
-        document.getElementsByClassName('best-match-container').item(0).style.opacity = 1;
-    }, 300);
+    if (this.previousResult === results[0].name) {
+        document.getElementById('score').style.opacity = 0;
+        setTimeout(function() {
+            document.getElementById('score').innerText = results[0].score;
+            document.getElementById('score').style.opacity = 1;
+        }, 300);
+    } else {
+        document.getElementsByClassName('best-match-container').item(0).style.opacity = 0;
+        setTimeout(function() {
+            document.getElementById('best-match').children[0].innerHTML = results[0].name;
+            document.getElementById('best-match').href = results[0].href;
+            document.getElementById('score').innerText = results[0].score;
+            document.getElementById('comparison-uncertainty').innerText = results[0].characteristics.uncertainty;
+            document.getElementById('comparison-change').innerText = results[0].characteristics.change;
+            document.getElementById('comparison-limitations').innerText = results[0].characteristics.limitations;
+            document.getElementById('comparison-complexity').innerText = results[0].characteristics.complexity;
+            document.getElementById('comparison-impact').innerText = results[0].characteristics.impact;
+            document.getElementsByClassName('best-match-container').item(0).style.opacity = 1;
+        }, 300)
+    }
 
-    console.log(this.characteristics)
+    this.previousResult = results[0].name;
 }
 
 function resetCharacteristics() {

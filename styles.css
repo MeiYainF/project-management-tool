@@ -85,6 +85,9 @@ table th, table td {
 
 .best-match-container {
     opacity: 0;
+}
+
+.best-match-container, #score {
     transition-duration: 0.3s;
 }
 
