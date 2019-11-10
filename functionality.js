@@ -1,9 +1,9 @@
 var characteristics = {
-    uncertainty: 0,
-    change: 0,
-    limitations: 0,
-    complexity: 0,
-    impact: 0
+    uncertainty: 3,
+    change: 3,
+    limitations: 3,
+    complexity: 3,
+    impact: 3
 };
 
 var scores = [{
@@ -89,28 +89,31 @@ function updateCharacteristic(value, characteristic) {
 
         results.push(project)
     });
-
     results = results.sort(function(a, b) {return a.score - b.score});
 
-
     document.getElementsByClassName('best-match-container').item(0).style.opacity = 0;
-
     setTimeout(function() {
         document.getElementById('best-match').children[0].innerHTML = results[0].name;
         document.getElementById('best-match').href = results[0].href;
-        document.getElementById('score').innerText = 'Score: ' + results[0].score + ' (Perfect score: 0)';
-        document.getElementById('comparison-uncertainty').innerText =
-            results[0].characteristics.uncertainty + ' (Uncertainty)';
-        document.getElementById('comparison-change').innerText =
-            results[0].characteristics.change  + ' (Change)';
-        document.getElementById('comparison-limitations').innerText =
-            results[0].characteristics.limitations + ' (Limitations)';
-        document.getElementById('comparison-complexity').innerText =
-            results[0].characteristics.complexity + ' (Organizational complexity)';
-        document.getElementById('comparison-impact').innerText =
-            results[0].characteristics.impact + ' (Impact on business)';
+        document.getElementById('score').innerText = 'Score: ' + results[0].score;
+        document.getElementById('comparison-uncertainty').innerText = results[0].characteristics.uncertainty;
+        document.getElementById('comparison-change').innerText = results[0].characteristics.change;
+        document.getElementById('comparison-limitations').innerText = results[0].characteristics.limitations;
+        document.getElementById('comparison-complexity').innerText = results[0].characteristics.complexity;
+        document.getElementById('comparison-impact').innerText = results[0].characteristics.impact;
         document.getElementsByClassName('best-match-container').item(0).style.opacity = 1;
     }, 300);
 
-    console.log(results)
+    console.log(this.characteristics)
+}
+
+function resetCharacteristics() {
+    const characteristics = Object.keys(this.characteristics);
+    characteristics.forEach((characteristic, i) => {
+        this.characteristics[characteristic] = 3;
+        document.getElementById(characteristic).innerText = 3;
+        document.getElementsByClassName('characteristic-range').item(i + 1).value = 3;
+    });
+
+    document.getElementsByClassName('best-match-container').item(0).style.opacity = 0;
 }

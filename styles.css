@@ -26,6 +26,14 @@ h4 {
     font-size: 25px;
 }
 
+.subtext {
+    color: #919191;
+}
+
+.text-align-right {
+    text-align: right;
+}
+
 #about, #project-definition, #project-types, #identify-project {
     min-height: 100vh;
 }
@@ -62,17 +70,17 @@ table th, table td {
     cursor: pointer;
 }
 
-.display-characteristic {
+.display-characteristic, .display-characteristic-example {
     display: flex;
     align-items: center;
 }
 
-.display-characteristic p {
+.display-characteristic p:first-child {
     width: 220px;
 }
 
-.display-characteristic input {
-    margin-right: 24px;
+.display-characteristic input, .display-characteristic-example input {
+    margin: 0 16px;
 }
 
 .best-match-container {
@@ -80,8 +88,23 @@ table th, table td {
     transition-duration: 0.3s;
 }
 
+.comparison-title {
+    padding-top: 24px;
+}
+
 .comparison p {
     margin: 0;
+}
+
+.reset-button {
+    display: inline-block;
+    border: none;
+    padding: 12px 48px;
+    margin: 20px 0;
+    text-decoration: none;
+    background: lavender;
+    border-radius: 25px;
+    cursor: pointer;
 }
 
 .characteristics-diagrams {

@@ -39,7 +39,7 @@
 
     <div class="w3-col l12 w3-padding-large w3-center project-types">
       <a href="#digitalization"><h4>Digitalization Projects</h4></a>
-      <a href="#ict-and-software"><h4>ICT- og Software Projects</h4></a>
+      <a href="#ict-and-software"><h4>ICT- and Software Projects</h4></a>
       <a href="#reorganization/restructuring"><h4>Reorganization/Restructuring Projects</h4></a>
       <a href="#new-product-development"><h4>New Product Development Projects</h4></a>
       <a href="#construction"><h4>Construction Projects</h4></a>
@@ -57,40 +57,49 @@
     <div class="w3-col l6 w3-padding-large">
       <h4>Specify Characteristics</h4>
 
+      <div class="display-characteristic-example">
+        <p class="text-align-right">Lowest score: 1</p>
+        <input class="characteristic-range" type="range" min="1" max="5" value="3" disabled
+               placeholder="Characteristic value selector" onchange="updateCharacteristic(this.value, 'uncertainty')">
+        <p>Highest score: 5</p>
+      </div>
+
       <div class="display-characteristic">
         <p>Uncertainty</p>
-        <input class="characteristic-range" type="range" min="0" max="5" value="0" placeholder="Uncertainty"
+        <input class="characteristic-range" type="range" min="1" max="5" value="3" placeholder="Uncertainty"
                onchange="updateCharacteristic(this.value, 'uncertainty')">
-        <span id="uncertainty">0</span>
+        <span id="uncertainty">3</span>
       </div>
 
       <div class="display-characteristic">
         <p>Change</p>
-        <input class="characteristic-range" type="range" min="0" max="5" value="0" placeholder="Change"
+        <input class="characteristic-range" type="range" min="1" max="5" value="3" placeholder="Change"
                onchange="updateCharacteristic(this.value, 'change')">
-        <span id="change">0</span>
+        <span id="change">3</span>
       </div>
 
       <div class="display-characteristic">
         <p>Limitations</p>
-        <input class="characteristic-range" type="range" min="0" max="5" value="0" placeholder="Limitations"
+        <input class="characteristic-range" type="range" min="1" max="5" value="3" placeholder="Limitations"
                onchange="updateCharacteristic(this.value, 'limitations')">
-        <span id="limitations">0</span>
+        <span id="limitations">3</span>
       </div>
 
       <div class="display-characteristic">
         <p>Organizational complexity</p>
-        <input class="characteristic-range" type="range" min="0" max="5" value="0"
+        <input class="characteristic-range" type="range" min="1" max="5" value="3"
                placeholder="Organizational complexity" onchange="updateCharacteristic(this.value, 'complexity')">
-        <span id="complexity">0</span>
+        <span id="complexity">3</span>
       </div>
 
       <div class="display-characteristic">
         <p>Impact on business</p>
-        <input class="characteristic-range" type="range" min="0" max="5" value="0" placeholder="Impact on business"
+        <input class="characteristic-range" type="range" min="1" max="5" value="3" placeholder="Impact on business"
                onchange="updateCharacteristic(this.value, 'impact')">
-        <span id="impact">0</span>
+        <span id="impact">3</span>
       </div>
+
+      <button class="reset-button" onclick="resetCharacteristics()">Reset</button>
     </div>
 
     <div class="w3-col l6 w3-padding-large">
@@ -98,15 +107,15 @@
 
       <div class="best-match-container">
         <a id="best-match" href="#"><h4></h4></a>
-        <p id="score"></p>
+        <p><span id="score"></span><span class="subtext">&nbsp (Perfect score: 0)</span></p>
 
-        <p>Comparison:</p>
+        <p class="comparison-title">Comparison:</p>
         <div class="comparison">
-          <p id="comparison-uncertainty"></p>
-          <p id="comparison-change"></p>
-          <p id="comparison-limitations"></p>
-          <p id="comparison-complexity"></p>
-          <p id="comparison-impact"></p>
+          <p><span id="comparison-uncertainty"></span><span class="subtext">&nbsp (Uncertainty)</span></p>
+          <p><span id="comparison-change"></span><span class="subtext">&nbsp (Change)</span></p>
+          <p><span id="comparison-limitations"></span><span class="subtext">&nbsp (Limitations)</span></p>
+          <p><span id="comparison-complexity"></span><span class="subtext">&nbsp (Organizational complexity)</span></p>
+          <p><span id="comparison-impact"></span><span class="subtext">&nbsp (Impact on business)</span></p>
         </div>
       </div>
     </div>
