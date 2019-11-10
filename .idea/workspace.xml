@@ -20,8 +20,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="109" column="51" selection-start-line="109" selection-start-column="46" selection-end-line="109" selection-end-column="51" />
+            <state relative-caret-position="415">
+              <caret line="774" selection-start-line="774" selection-end-line="774" />
               <folding>
                 <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -29,20 +29,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/functionality.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
-              <caret line="106" column="56" selection-start-line="106" selection-start-column="56" selection-end-line="106" selection-end-column="56" />
+            <state relative-caret-position="209">
+              <caret line="116" column="31" selection-start-line="116" selection-start-column="31" selection-end-line="116" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/styles.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="85" column="21" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
+            <state relative-caret-position="165">
+              <caret line="112" column="1" selection-start-line="112" selection-start-column="1" selection-end-line="112" selection-end-column="1" />
             </state>
           </provider>
         </entry>
@@ -85,17 +85,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>stake</find>
-      <find>stakeholders&lt;</find>
-      <find>home</find>
-      <find>risks</find>
-      <find>risks&lt;</find>
-      <find>constr</find>
-      <find>new</find>
-      <find>new pr</find>
-      <find>digitalization</find>
-      <find>digitalization projects&lt;</find>
-      <find>&lt;h3&gt;</find>
       <find>&lt;h2&gt;</find>
       <find>&lt;h1</find>
       <find>&lt;h2</find>
@@ -114,7 +103,18 @@
       <find>comparis</find>
       <find>results</find>
       <find>comparison</find>
+      <find>scores</find>
+      <find>score</find>
+      <find>characteristics</find>
+      <find>characteristics-dia</find>
+      <find>appendChild</find>
+      <find>digitalization-table</find>
+      <find>append</find>
       <find>Score</find>
+      <find>characteristicsKeys</find>
+      <find>-table</find>
+      <find>tran</find>
+      <find>characteristics-table</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -128,9 +128,9 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/project-types/digitalization-project.html" />
         <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/styles.css" />
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/functionality.js" />
-        <option value="$PROJECT_DIR$/styles.css" />
       </list>
     </option>
   </component>
@@ -201,12 +201,12 @@
       <option name="presentableId" value="Default" />
       <updated>1572809126232</updated>
       <workItem from="1572809127447" duration="14281000" />
-      <workItem from="1573331871682" duration="15303000" />
+      <workItem from="1573331871682" duration="18913000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29625000" />
+    <option name="totallyTimeSpent" value="33235000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -248,7 +248,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/functionality.js</url>
-          <line>83</line>
+          <line>98</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -345,27 +345,27 @@
     <entry file="file://$PROJECT_DIR$/images/section/research-project.jpg">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/functionality.js">
+    <entry file="file://$PROJECT_DIR$/styles.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
-          <caret line="106" column="56" selection-start-line="106" selection-start-column="56" selection-end-line="106" selection-end-column="56" />
+        <state relative-caret-position="165">
+          <caret line="112" column="1" selection-start-line="112" selection-start-column="1" selection-end-line="112" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="109" column="51" selection-start-line="109" selection-start-column="46" selection-end-line="109" selection-end-column="51" />
+        <state relative-caret-position="415">
+          <caret line="774" selection-start-line="774" selection-end-line="774" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/styles.css">
+    <entry file="file://$PROJECT_DIR$/functionality.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="85" column="21" selection-start-line="85" selection-start-column="21" selection-end-line="85" selection-end-column="21" />
+        <state relative-caret-position="209">
+          <caret line="116" column="31" selection-start-line="116" selection-start-column="31" selection-end-line="116" selection-end-column="31" />
         </state>
       </provider>
     </entry>
