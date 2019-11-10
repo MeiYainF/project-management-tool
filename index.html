@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="styles.css">
+<script src="functionality.js"></script>
 <body>
 
 <!-- Navbar (sit on top) -->
@@ -15,7 +16,7 @@
     <div class="w3-right w3-hide-small">
       <a href="#project-definition" class="w3-bar-item w3-button">Project Definition</a>
       <a href="#project-types" class="w3-bar-item w3-button">Project Types</a>
-      <!--<a href="#classify-project" class="w3-bar-item w3-button">Gjenkjenn prosjekt</a>-->
+      <a href="#identify-project" class="w3-bar-item w3-button">Identify Project</a>
       <a href="#about" class="w3-bar-item w3-button">About</a>
     </div>
   </div>
@@ -29,6 +30,8 @@
       <h1 class="w3-center">Project Definition 🔍</h1><br>
     </div>
   </div>
+
+  <hr>
 
   <!-- Project Types Section -->
 
@@ -51,6 +54,72 @@
       <a href="#construction"><h4>Construction Projects</h4></a>
       <a href="#research-and-studies"><h4>Research Projects And Studies</h4></a>
     </div>
+  </div>
+
+  <hr>
+
+  <div class="w3-row w3-padding-64" id="identify-project">
+    <div class="w3-col l12 w3-padding-large">
+      <h1 class="w3-center">Identify Project 🔍</h1><br>
+    </div>
+
+    <div class="w3-col l6 w3-padding-large">
+      <h4>Specify Characteristics</h4>
+
+      <div class="display-characteristic">
+        <p>Uncertainty</p>
+        <input class="characteristic-range" type="range" min="0" max="5" value="0" placeholder="Uncertainty"
+               onchange="updateCharacteristic(this.value, 'uncertainty')">
+        <span id="uncertainty">0</span>
+      </div>
+
+      <div class="display-characteristic">
+        <p>Change</p>
+        <input class="characteristic-range" type="range" min="0" max="5" value="0" placeholder="Change"
+               onchange="updateCharacteristic(this.value, 'change')">
+        <span id="change">0</span>
+      </div>
+
+      <div class="display-characteristic">
+        <p>Limitations</p>
+        <input class="characteristic-range" type="range" min="0" max="5" value="0" placeholder="Limitations"
+               onchange="updateCharacteristic(this.value, 'limitations')">
+        <span id="limitations">0</span>
+      </div>
+
+      <div class="display-characteristic">
+        <p>Organizational complexity</p>
+        <input class="characteristic-range" type="range" min="0" max="5" value="0"
+               placeholder="Organizational complexity" onchange="updateCharacteristic(this.value, 'complexity')">
+        <span id="complexity">0</span>
+      </div>
+
+      <div class="display-characteristic">
+        <p>Impact on business</p>
+        <input class="characteristic-range" type="range" min="0" max="5" value="0" placeholder="Impact on business"
+               onchange="updateCharacteristic(this.value, 'impact')">
+        <span id="impact">0</span>
+      </div>
+    </div>
+
+    <div class="w3-col l6 w3-padding-large">
+      <h4>Best Project Match</h4>
+
+      <div class="best-match-container">
+        <a id="best-match" href="#"><h4></h4></a>
+        <p id="score"></p>
+
+        <p>Comparison:</p>
+        <div class="comparison">
+          <p id="comparison-uncertainty"></p>
+          <p id="comparison-change"></p>
+          <p id="comparison-limitations"></p>
+          <p id="comparison-complexity"></p>
+          <p id="comparison-impact"></p>
+        </div>
+      </div>
+    </div>
+
   </div>
 
   <hr>
@@ -1725,21 +1794,6 @@
   </div>
 
   <hr>
-
-  <!-- Contact Section -->
-  <!--<div class="w3-row w3-padding-64" id="classify-project">-->
-  <!--<div class="w3-col l12 w3-padding-large">-->
-  <!--<h1 class="w3-center">Gjenkjenn prosjekt 💍</h1><br>-->
-  <!--</div>-->
-
-  <!--<div class="w3-col l6 w3-padding-large">-->
-  <!--</div>-->
-
-  <!--<div class="w3-col l6 w3-padding-large">-->
-  <!--</div>-->
-  <!--</div>-->
-
-  <!--<hr>-->
 
   <!-- About Section -->
   <div class="w3-row w3-padding-64" id="about">
