@@ -107,17 +107,17 @@ function updateCharacteristic(value, characteristic) {
     results = results.sort(function(a, b) {return a.score - b.score});
 
     if (this.previousResult === results[0].name) {
-        document.getElementById('score').style.opacity = 0;
-        setTimeout(function() {
-            document.getElementById('score').innerText = results[0].score;
-            document.getElementById('score').style.opacity = 1;
-        }, 300);
+        // document.getElementById('score').style.opacity = 0;
+        // setTimeout(function() {
+        //     document.getElementById('score').innerText = results[0].score;
+        //    document.getElementById('score').style.opacity = 1;
+        // }, 300);
     } else {
         document.getElementsByClassName('best-match-container').item(0).style.opacity = 0;
         setTimeout(function() {
             document.getElementById('best-match').children[0].innerHTML = results[0].name;
             document.getElementById('best-match').href = results[0].href;
-            document.getElementById('score').innerText = results[0].score;
+            // document.getElementById('score').innerText = results[0].score;
 
             this.characteristicKeys.forEach((characteristic) => {
                 document.getElementById('comparison-' + characteristic).innerText =
