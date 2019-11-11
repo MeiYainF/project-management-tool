@@ -56,10 +56,10 @@ var projects = [{
     tableId: 'new-product-dev-table',
     href: '#new-product-development',
     characteristics: {
-        uncertainty: 3,
+        uncertainty: 4,
         change: 5,
-        limitations: 2,
-        complexity: 2,
+        limitations: 4,
+        complexity: 3,
         impact: 5
     }
     }, {
